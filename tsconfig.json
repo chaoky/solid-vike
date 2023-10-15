@@ -17,11 +17,10 @@
                 "jsxImportSource": "solid-js",
                 "skipLibCheck": true,
                 "esModuleInterop": true,
-                "baseUrl": "./",
                 "noEmit": true,
                 "paths": {
-                        "#lib/*": [
-                                "lib/*"
+                        "/*": [
+                                "./*"
                         ],
                 }
         }

@@ -2,7 +2,7 @@ import { generateHydrationScript, renderToStream } from "solid-js/web";
 import { PageLayout } from "./PageLayout";
 import { escapeInject, dangerouslySkipEscape, stampPipe } from "vike/server";
 import logoUrl from "./logo.svg";
-import { PageContext } from "#lib/usePageContext";
+import { PageContext } from "/lib/usePageContext";
 
 // See https://vike.dev/data-fetching
 export const passToClient = ["pageProps", "documentProps"];

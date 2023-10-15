@@ -1,4 +1,4 @@
-import { Counter } from "#lib/Counter";
+import { Counter } from "/lib/Counter";
 
 export function Page() {
   return (

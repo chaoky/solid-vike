@@ -3,7 +3,6 @@ import vike from "vike/plugin";
 import { UserConfig } from "vite";
 import UnoCSS from "unocss/vite";
 import { presetAttributify } from "unocss";
-import { resolve } from "path";
 
 const config: UserConfig = {
   plugins: [
@@ -14,9 +13,7 @@ const config: UserConfig = {
     vike(),
   ],
   resolve: {
-    alias: {
-      "#lib": resolve(import.meta.dir, "lib"),
-    },
+    alias: { "/": import.meta.dir },
   },
 };
 

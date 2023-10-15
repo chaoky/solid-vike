@@ -4,7 +4,7 @@ import { hydrate, render as render_ } from "solid-js/web";
 import { PageLayout } from "./PageLayout";
 import type { PageContextBuiltInClientWithClientRouting as PageContextBuiltInClient } from "vike/types";
 import { createStore, reconcile } from "solid-js/store";
-import { PageContext } from "#lib/usePageContext";
+import { PageContext } from "/lib/usePageContext";
 
 type PageContextClient = PageContextBuiltInClient & PageContext;
 
