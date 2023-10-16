@@ -1,7 +1,7 @@
 export const clientRouting = true;
 
 import { hydrate, render as render_ } from "solid-js/web";
-import { PageLayout } from "./PageLayout";
+import { App } from "./App";
 import type { PageContextBuiltInClientWithClientRouting as PageContextBuiltInClient } from "vike/types";
 import { createStore, reconcile } from "solid-js/store";
 import { PageContext } from "/lib/usePageContext";
@@ -27,12 +27,12 @@ export async function render(pageContext: PageContextClient) {
     const container = document.getElementById("page-view")!;
     if (pageContext.isHydration) {
       dispose = hydrate(
-        () => <PageLayout pageContext={pageContextStore} />,
+        () => <App pageContext={pageContextStore} />,
         container,
       );
     } else {
       dispose = render_(
-        () => <PageLayout pageContext={pageContextStore} />,
+        () => <App pageContext={pageContextStore} />,
         container,
       );
     }

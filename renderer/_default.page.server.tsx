@@ -1,5 +1,5 @@
 import { generateHydrationScript, renderToStream } from "solid-js/web";
-import { PageLayout } from "./PageLayout";
+import { App } from "./App";
 import { escapeInject, dangerouslySkipEscape, stampPipe } from "vike/server";
 import logoUrl from "./logo.svg";
 import { PageContext } from "/lib/usePageContext";
@@ -9,7 +9,7 @@ export const passToClient = ["pageProps", "documentProps"];
 
 export function render(pageContext: PageContext) {
   const { pipe } = renderToStream(() => (
-    <PageLayout pageContext={pageContext} />
+    <App pageContext={pageContext} />
   ));
   stampPipe(pipe, "node-stream");
 

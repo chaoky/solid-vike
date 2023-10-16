@@ -12,7 +12,7 @@ interface Props {
   pageContext: Store<PageContext>;
 }
 
-export function PageLayout(props: Props) {
+export function App(props: Props) {
   return (
     <PageContextProvider pageContext={props.pageContext}>
       <Layout>
@@ -25,11 +25,6 @@ export function PageLayout(props: Props) {
 function Page() {
   const pageContext = usePageContext();
   return (
-    <>
-      <Dynamic
-        component={pageContext.Page}
-        {...(pageContext.pageProps ?? {})}
-      />
-    </>
+    <Dynamic component={pageContext.Page} {...(pageContext.pageProps ?? {})} />
   );
 }
