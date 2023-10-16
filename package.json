@@ -2,7 +2,7 @@
   "scripts": {
     "dev": "bunx --bun vite --host",
     "build": "vite build",
-    "preview": "vite build && vite preview"
+    "preview": "vite build && vite preview",
   },
   "type": "module",
   "dependencies": {
@@ -14,6 +14,6 @@
     "vite-plugin-solid": "^2.7.1"
   },
   "devDependencies": {
-    "bun-types": "^1.0.6"
+    "bun-types": "^1.0.6",
   }
 }

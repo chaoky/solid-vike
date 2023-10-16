@@ -1,3 +1,6 @@
+/// <reference lib="dom" />
+/// <reference lib="dom.iterable" />
+
 import type { AttributifyAttributes } from "@unocss/preset-attributify";
 import type { AttributifyNames } from "@unocss/preset-attributify";
 
