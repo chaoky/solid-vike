@@ -3,6 +3,7 @@
     "dev": "bunx --bun vite --host",
     "build": "vite build",
     "preview": "vite build && vite preview",
+    "fmt": "prettier . --write"
   },
   "type": "module",
   "dependencies": {
@@ -15,5 +16,6 @@
   },
   "devDependencies": {
     "bun-types": "^1.0.6",
+    "prettier": "^3.0.3"
   }
 }

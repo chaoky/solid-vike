@@ -8,9 +8,7 @@ import { PageContext } from "/lib/usePageContext";
 export const passToClient = ["pageProps", "documentProps"];
 
 export function render(pageContext: PageContext) {
-  const { pipe } = renderToStream(() => (
-    <App pageContext={pageContext} />
-  ));
+  const { pipe } = renderToStream(() => <App pageContext={pageContext} />);
   stampPipe(pipe, "node-stream");
 
   // See https://vike.dev/head

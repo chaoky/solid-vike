@@ -1,27 +1,22 @@
 {
-        "compilerOptions": {
-                "strict": true,
-                "module": "ES2020",
-                "moduleResolution": "Node",
-                "target": "ES2020",
-                "lib": [
-                        "DOM",
-                        "DOM.Iterable",
-                        "ESNext"
-                ],
-                "types": [
-                        "vite/client",
-                        "bun-types"
-                ],
-                "jsx": "preserve",
-                "jsxImportSource": "solid-js",
-                "skipLibCheck": true,
-                "esModuleInterop": true,
-                "noEmit": true,
-                "paths": {
-                        "/*": [
-                                "./*"
-                        ],
-                }
-        }
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["ESNext"],
+    "types": ["bun-types", "vite/client"],
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js",
+    "paths": {
+      "/*": ["./*"]
+    },
+    "noEmit": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "composite": true,
+    "downlevelIteration": true,
+    "allowSyntheticDefaultImports": true
+  }
 }
