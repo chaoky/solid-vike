@@ -2,13 +2,16 @@ import solid from "vite-plugin-solid";
 import vike from "vike/plugin";
 import { UserConfig } from "vite";
 import UnoCSS from "unocss/vite";
-import { presetAttributify } from "unocss";
+import { presetAttributify, presetUno } from "unocss";
 
 const config: UserConfig = {
   plugins: [
     solid({ ssr: true }),
     UnoCSS({
-      presets: [presetAttributify({ prefix: "un-", prefixedOnly: true })],
+      presets: [
+        presetUno(),
+        presetAttributify({ prefix: "uno-", prefixedOnly: true }),
+      ],
     }),
     vike(),
   ],
